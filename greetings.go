@@ -10,6 +10,6 @@ func Sayhi(name string) (string, error) {
         return "", errors.New("empty name")
     }
 
-    message := fmt.Sprintf("Hi, %v. Welcome", name)
+    message := fmt.Sprintf("Hi, %v. Welcome.", name)
     return message, nil
 }
