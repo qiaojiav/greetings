@@ -19,8 +19,8 @@ type Num struct {
 }
 
 func (n Num) Max() int {
-    m = n.M
-    n = n.N
+    m := n.M
+    n := n.N
 
     if m > n {
         return m
