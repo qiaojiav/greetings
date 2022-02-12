@@ -24,3 +24,14 @@ func (v Num) Max() int {
     }
     return v.N
 }
+
+func (v Num) Min() int {
+    if v.M > v.N {
+        return v.N
+    }
+    return v.M
+}
+
+func (v Num) Sum() int{
+    return v.M+v.N
+}
