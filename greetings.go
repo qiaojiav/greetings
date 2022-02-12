@@ -18,13 +18,9 @@ type Num struct {
     M,N int
 }
 
-func (n Num) Max() int {
-    m := n.M
-    n := n.N
-
-    if m > n {
-        return m
+func (v Num) Max() int {
+    if v.M > v.N {
+        return v.M
     }
-
-    return n
+    return v.N
 }
