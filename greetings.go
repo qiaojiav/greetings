@@ -5,6 +5,22 @@ import (
     "errors"
 )
 
+
+type N struct {
+    m int
+    n int
+}
+
+type P struct {
+    width int
+    high int
+}
+
+type Rectangle interface {
+    Circumference() int
+    Area() int
+}
+
 func Sayhi(name string) (string, error) {
     if name == "" {
         return "", errors.New("empty name")
@@ -14,17 +30,19 @@ func Sayhi(name string) (string, error) {
     return message, nil
 }
 
-type Num struct {
-    M,N int
+func (n N) Max() int {
+    x := n.n
+    y := n.m
+    if x > y {
+        return x
+    }
+    return y
 }
 
-func (n Num) Max() int {
-    m := n.M
-    n := n.N
+func (p P) Area() int {
+    return p.width * p.high
+}
 
-    if m > n {
-        return m
-    }
-
-    return n
+func (p P) Circumference() int {
+    return (p.width + p.high) * 2
 }
