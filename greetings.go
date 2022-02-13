@@ -41,5 +41,5 @@ func (p P) Area() int {
 }
 
 func (p P) Circumference() int {
-    return (p.Width + P.High) * 2
+    return (p.Width + p.High) * 2
 }
