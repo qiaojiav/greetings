@@ -12,7 +12,7 @@ type N struct {
 }
 
 type P struct {
-    width, high int
+    Width, High int
 }
 
 type Rectangle interface {
@@ -37,9 +37,9 @@ func (v N) Max() int {
 }
 
 func (p P) Area() int {
-    return p.width * p.high
+    return p.Width * P.high
 }
 
 func (p P) Circumference() int {
-    return (p.width + p.high) * 2
+    return (p.Width + P.high) * 2
 }
