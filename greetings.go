@@ -37,7 +37,7 @@ func (v N) Max() int {
 }
 
 func (p P) Area() int {
-    return p.Width * P.High
+    return p.Width * p.High
 }
 
 func (p P) Circumference() int {
