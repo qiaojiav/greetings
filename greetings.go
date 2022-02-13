@@ -7,7 +7,8 @@ import (
 
 
 type N struct {
-    m, n int
+    A int
+    B int
 }
 
 type P struct {
@@ -29,12 +30,10 @@ func Sayhi(name string) (string, error) {
 }
 
 func (v N) Max() int {
-    x := v.n
-    y := v.m
-    if x > y {
-        return x
+    if v.A > v.B {
+        return v.A
     }
-    return y
+    return v.B
 }
 
 func (p P) Area() int {
