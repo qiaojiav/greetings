@@ -7,13 +7,11 @@ import (
 
 
 type N struct {
-    m int
-    n int
+    m, n int
 }
 
 type P struct {
-    width int
-    high int
+    width, high int
 }
 
 type Rectangle interface {
@@ -30,9 +28,9 @@ func Sayhi(name string) (string, error) {
     return message, nil
 }
 
-func (n N) Max() int {
-    x := n.n
-    y := n.m
+func (v N) Max() int {
+    x := v.n
+    y := v.m
     if x > y {
         return x
     }
